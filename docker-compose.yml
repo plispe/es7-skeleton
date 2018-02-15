@@ -1,0 +1,9 @@
+version: "2.1"
+services:
+  app:
+    build: .
+    command: "yarn dev"
+    volumes:
+      - ./:/app
+    ports:
+      - 3000:3000
